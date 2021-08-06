@@ -1,0 +1,4 @@
+# cheat.sh bash completion
+. ~/.bash.d/cht.sh
+
+
