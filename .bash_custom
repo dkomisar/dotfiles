@@ -1,6 +1,9 @@
 # cheat.sh bash completion
-. ~/.bash.d/cht.sh
+#. ~/.bash.d/cht.sh
 
 # vi mode
 set -o vi
+
+# aliases
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
