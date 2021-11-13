@@ -4,8 +4,28 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # vi mode
 set -o vi
 
-# cheat.sh bash completion
-if [ -e ~/.bash.d/cht.sh ]; then
-  source ~/.bash.d/cht.sh
+# get name of shell
+SHELL_CMD=$(basename $(readlink /proc/$$/exe))
+
+if [[ "$SHELL_CMD" == zsh ]]; then
+  # automatically remove duplicates from fpath 
+  typeset -U fpath
+
+  # custom zsh completion
+  if [[ -d ~/.zsh.d/ ]]; then
+    fpath=(~/.zsh.d/ $fpath)
+  fi
+
+  # enable tab completion
+  compinit
 fi
+
+if [[ "$SHELL_CMD" == bash ]]; then
+  # cheat.sh bash completion
+  if [[ -f ~/.bash.d/cht.sh ]]; then
+    source ~/.bash.d/cht.sh
+  fi
+fi
+
+unset SHELL_CMD
 
