@@ -5,5 +5,6 @@
 xmodmap ~/.xmodmap
 
 # send ESC on CTRL release if nothing else pressed
+pkill xcape
 xcape -e 'Control_L=Escape'
 
