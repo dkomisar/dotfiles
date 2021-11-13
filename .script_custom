@@ -5,9 +5,13 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 set -o vi
 
 # get name of shell
-SHELL_CMD=$(basename $(readlink /proc/$$/exe))
+if [[ -d /proc ]]; then
+  SHELL_CMD=$(basename $(readlink /proc/$$/exe))
+else
+  SHELL_CMD=$(ps -o comm= $$)
+fi
 
-if [[ "$SHELL_CMD" == zsh ]]; then
+if [[ "$SHELL_CMD" == *zsh ]]; then
   # automatically remove duplicates from fpath 
   typeset -U fpath
 
@@ -20,7 +24,7 @@ if [[ "$SHELL_CMD" == zsh ]]; then
   compinit
 fi
 
-if [[ "$SHELL_CMD" == bash ]]; then
+if [[ "$SHELL_CMD" == *bash ]]; then
   # cheat.sh bash completion
   if [[ -f ~/.bash.d/cht.sh ]]; then
     source ~/.bash.d/cht.sh
