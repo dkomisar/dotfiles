@@ -5,3 +5,11 @@ set expandtab
 set hidden
 set number
 set relativenumber
+set hlsearch
+set incsearch
+set clipboard=unnamed
+"set clipboard=unnamedplus
+
+"for netrw
+set nocp
+filetype plugin on
