@@ -14,6 +14,8 @@ set relativenumber
 set hlsearch
 "incremental search
 set incsearch
+"ignore case for all lowercase search
+set ignorecase smartcase
 
 set clipboard=unnamed
 "X windows primary/clipboard
