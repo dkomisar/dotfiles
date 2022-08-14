@@ -5,3 +5,8 @@ alias dotfiles-gui='GIT_DIR=$HOME/.dotfiles GIT_WORK_TREE=$HOME /usr/bin/gitk'
 # turn on vi shell keybindings
 set -o vi
 
+# add exe dir to path
+if ! grep 'shell-setup/bin' <(echo "$PATH"); then
+  PATH=$SETUP_DIR/bin:$PATH
+fi
+
