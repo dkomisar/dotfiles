@@ -1,0 +1,8 @@
+  # automatically remove duplicates from fpath 
+  typeset -U fpath
+
+  # custom zsh completion
+  fpath=($COMPLETION_DIR/zsh/ $fpath)
+
+  # enable tab completion
+  compinit
