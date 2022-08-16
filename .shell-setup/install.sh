@@ -10,7 +10,7 @@ fi
 # install xcape to allow sending ESC with single Ctrl press
 if [[ $(uname) == Linux ]]; then
   echo 'Installing dependencies'
-  sudo apt update && sudo apt install xcape -f
+  apt update && apt install xcape -f
 fi
 
 # TODO setup keyboard.sh as a startup application
