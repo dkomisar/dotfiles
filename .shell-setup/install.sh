@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # setup repo
-if [[ ! -e ~/.dotfiles ]]; then
+if [[ ! -e ~/.dotfiles/ ]]; then
   echo "Cloning dotfiles repo to ~/.dotfiles"
   git clone --bare git@github.com:dkomisar/dotfiles.git ~/.dotfiles
   git --git-dir=~/.dotfiles --work-tree=~/ checkout master 
@@ -10,7 +10,7 @@ fi
 # install xcape to allow sending ESC with single Ctrl press
 if [[ $(uname) == Linux ]]; then
   echo 'Installing dependencies'
-  apt update && apt install xcape -f
+  sudo apt update && sudo apt install xcape -f
 fi
 
 # TODO setup keyboard.sh as a startup application
