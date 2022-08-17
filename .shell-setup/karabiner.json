@@ -2,9 +2,38 @@
     "title": "My Mods",
     "rules": [
         {
-            "description": "CapsLock -> Escape if alone, Control if not",
+            "description": "CapsLock -> Escape if alone, Control/Command if not",
             "manipulators": [
                 {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock",
+                        "modifiers": {
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com.google.Chrome$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
                     "from": {
                         "key_code": "caps_lock",
                         "modifiers": {
@@ -21,9 +50,7 @@
                         {
                             "key_code": "escape"
                         }
-                    ],
-                    "type": "basic",
-                    "conditions": []
+                    ]
                 }
             ]
         }
