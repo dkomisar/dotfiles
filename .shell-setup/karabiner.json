@@ -13,7 +13,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "left_command",
+                            "key_code": "left_control",
                             "lazy": true
                         }
                     ],
