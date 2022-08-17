@@ -1,0 +1,28 @@
+{
+    "title": "Experimental Mods",
+    "rules": [
+        {
+            "description": "CapsLock -> Escape if alone, Command if not",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ],
+                    "type": "basic",
+                    "conditions": []
+                }
+            ]
+        }
+    ]
+}

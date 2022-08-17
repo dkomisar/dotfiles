@@ -17,6 +17,11 @@ if [[ $(uname) == Linux ]]; then
   sudo apt update && sudo apt install xcape -f
 fi
 
+if [[ $(uname) == Darwin ]]; then
+  echo "Installing karabiner config"
+  ln -s $HOME/.shell-setup/karabiner.json $HOME/.config/karabiner/assets/complex_modifications/shell-setup.json
+fi
+
 # TODO setup keyboard.sh as a startup application
 
 # setup shells to call config
