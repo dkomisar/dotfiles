@@ -1,11 +1,15 @@
 #!/bin/bash
 
+repo=$HOME/.dotfiles
+
 # setup repo
-if [[ ! -e ~/.dotfiles/ ]]; then
-  echo "Cloning dotfiles repo to ~/.dotfiles"
-  git clone --bare git@github.com:dkomisar/dotfiles.git ~/.dotfiles
-  git --git-dir=~/.dotfiles --work-tree=~/ checkout master 
+if [[ ! -e $repo ]]; then
+  echo "Cloning dotfiles repo to $repo"
+  git clone --bare git@github.com:dkomisar/dotfiles.git $repo
+  git --git-dir=$repo --work-tree=$HOME checkout master 
 fi
+
+git --git-dir=$repo --work-tree=$HOME config status.showUntrackedFiles no
 
 # install xcape to allow sending ESC with single Ctrl press
 if [[ $(uname) == Linux ]]; then
@@ -16,12 +20,12 @@ fi
 # TODO setup keyboard.sh as a startup application
 
 # setup shells to call config
-if [[ -e ~/.bashrc ]] && ! grep 'shell-setup' ~/.bashrc; then
-  echo 'Installing bash'
-  echo 'source ~/.shell-setup/setup.sh' >> ~/.bashrc
+if [[ -e $HOME/.bashrc ]] && ! grep -q 'shell-setup' $HOME/.bashrc; then
+  echo 'Installing bash dotfiles setup'
+  echo 'source ~/.shell-setup/setup.sh' >> $HOME/.bashrc
 fi
-if [[ -e ~/.zshrc ]] && ! grep 'shell-setup' ~/.zshrc; then
-  echo 'Installing zsh'
-  echo 'source ~/.shell-setup/setup.sh' >> ~/.zshrc
+if [[ -e $HOME/.zshrc ]] && ! grep -q 'shell-setup' $HOME/.zshrc; then
+  echo 'Installing zsh dotfiles setup'
+  echo 'source ~/.shell-setup/setup.sh' >> $HOME/.zshrc
 fi
 
