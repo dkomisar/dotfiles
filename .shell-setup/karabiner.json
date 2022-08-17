@@ -2,7 +2,7 @@
     "title": "My Mods",
     "rules": [
         {
-            "description": "CapsLock -> Escape if alone, Command if not",
+            "description": "CapsLock -> Escape if alone, Control if not",
             "manipulators": [
                 {
                     "from": {
