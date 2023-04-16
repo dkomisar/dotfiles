@@ -10,3 +10,10 @@ if ! grep -q 'shell-setup/bin' <(echo "$PATH"); then
   PATH=$SETUP_DIR/bin:$PATH
 fi
 
+# set EDITOR
+if which -s nvim; then
+  export EDITOR=nvim
+else
+  export EDITOR=vim
+fi
+
