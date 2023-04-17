@@ -1,2 +1,5 @@
 source $COMPLETION_DIR/bash/cht.sh
 
+# open command line in editor
+#bindkey -M vicmd v edit-and-execute-command
+

@@ -1,8 +1,13 @@
-  # automatically remove duplicates from fpath 
-  typeset -U fpath
+# automatically remove duplicates from fpath 
+typeset -U fpath
 
-  # custom zsh completion
-  fpath=($COMPLETION_DIR/zsh/ $fpath)
+# custom zsh completion
+fpath=($COMPLETION_DIR/zsh/ $fpath)
 
-  # enable tab completion
-  compinit
+# enable tab completion
+compinit
+
+# open command line in editor
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
