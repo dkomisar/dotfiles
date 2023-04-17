@@ -4,6 +4,7 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+"don't close unsaved buffers
 set hidden
 
 "line numbers
@@ -25,6 +26,9 @@ set clipboard=unnamedplus
 set nocp
 filetype plugin on
 
+"turn off last search highlights
+nnoremap <esc><esc> :nohlsearch<return><esc>
+
 "setup vim-plug
 "https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -33,5 +37,4 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-nnoremap <esc><esc> :nohlsearch<return><esc>
 

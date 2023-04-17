@@ -4,6 +4,7 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+"don't close unsaved buffers
 set hidden
 
 "line numbers
@@ -24,4 +25,7 @@ set clipboard=unnamedplus
 "for netrw
 set nocp
 filetype plugin on
+
+"turn off last search highlights
+nnoremap <esc><esc> :nohlsearch<return><esc>
 
