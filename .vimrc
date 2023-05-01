@@ -23,8 +23,8 @@ set clipboard=unnamed
 set clipboard=unnamedplus
 
 "for netrw
-set nocp
-filetype plugin on
+set nocompatible
+filetype plugin indent on
 
 "turn off last search highlights
 nnoremap <esc><esc> :nohlsearch<return><esc>
