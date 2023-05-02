@@ -13,6 +13,8 @@ fi
 # set EDITOR
 if which -s nvim; then
   export EDITOR=nvim
+  alias vim=nvim
+  alias vi=nvim
 else
   export EDITOR=vim
 fi
