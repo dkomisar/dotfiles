@@ -37,17 +37,33 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-"fzf plugin
+"plugin
 call plug#begin()
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'davidhalter/jedi-vim'
 call plug#end()
 
+"fzf find
 nnoremap <silent> <C-f> :Files<CR>
+"ripgrep
 nnoremap <silent> <Leader>f :Rg<CR>
 
+"disable normal navigation
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+"start nerdtree and take focus away from it
+autocmd VimEnter * call StartNerdTree()
+function StartNerdTree()
+    NERDTree
+    :execute "normal \<C-W>\<Right>"
+endfunction
