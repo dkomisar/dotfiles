@@ -41,11 +41,12 @@ endif
 call plug#begin()
   if exists('g:vscode')
     " VSCode extension
+    Plug 'asvetliakov/vim-easymotion', { 'as': 'vsc-easymotion' }
   else
     " ordinary Neovim
     Plug 'easymotion/vim-easymotion'
     Plug 'folke/which-key.nvim'
-    "Plug 'liuchengxu/vim-which-key'
+    "Plug 'liuchengxu/vim-which-key' "original
     Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-dispatch'
