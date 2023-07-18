@@ -1,3 +1,6 @@
+"leader must be set before keymaps
+let mapleader = ","
+
 "tabs
 set tabstop=2
 set shiftwidth=2
@@ -23,6 +26,7 @@ set ignorecase smartcase
 "set clipboard=unnamedplus
 
 "for netrw
+"not needed after vim 8
 set nocompatible
 filetype plugin indent on
 
@@ -70,4 +74,5 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
 
