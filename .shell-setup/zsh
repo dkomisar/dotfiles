@@ -10,4 +10,6 @@ compinit
 # open command line in editor
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
+# reverse search
+bindkey '^R' history-incremental-search-backward
 
