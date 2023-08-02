@@ -1,5 +1,7 @@
 "leader must be set before keymaps
-let mapleader = ","
+
+nnoremap <SPACE> <Nop>
+let mapleader = " "
 
 "tabs
 set tabstop=2
