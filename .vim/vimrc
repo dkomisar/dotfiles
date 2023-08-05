@@ -56,6 +56,7 @@ call plug#begin()
     Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-dispatch'
+    Plug 'tpope/vim-unimpaired'
     Plug 'davidhalter/jedi-vim'
     Plug 'junegunn/fzf.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -67,9 +68,9 @@ call plug#begin()
 call plug#end()
 
 "fzf find
-nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <C-p> :Files<CR>
 "ripgrep
-nnoremap <silent> <Leader>f :Rg<CR>
+nnoremap <silent> <Leader>p :Rg<CR>
 
 "disable normal navigation
 noremap <Up> <Nop>

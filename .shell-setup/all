@@ -19,3 +19,6 @@ else
   export EDITOR=vim
 fi
 
+# Misc settings
+export FZF_DEFAULT_COMMAND="rg --files"
+
