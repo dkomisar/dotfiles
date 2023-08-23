@@ -24,12 +24,14 @@ call plug#begin()
     Plug 'scrooloose/nerdtree'
     Plug 'tpope/vim-dispatch'
 
-    Plug 'junegunn/fzf.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    "fzf find
+    Plug 'junegunn/fzf.vim'
     nnoremap <silent> <C-p> :Files<CR>
-    "ripgrep
     nnoremap <silent> <Leader>p :Rg<CR>
+    nnoremap <silent> <Leader>b :Buffers<CR>
+
+    " use ripgrep for :grep
+    set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 
     "Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'
