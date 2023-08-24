@@ -3,6 +3,12 @@
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
+"prev/next pairs
+nnoremap [q :cprev<CR>
+nnoremap ]q :cnext<CR>
+nnoremap [t :tabprev<CR>
+nnoremap ]t :tabnext<CR>
+
 "setup vim-plug
 "https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
