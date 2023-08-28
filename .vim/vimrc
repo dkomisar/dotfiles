@@ -30,6 +30,9 @@ call plug#begin()
     Plug 'scrooloose/nerdtree'
     Plug 'tpope/vim-dispatch'
     Plug 'junegunn/vim-peekaboo'
+    Plug 'xolox/vim-misc'
+    Plug 'xolox/vim-session'
+    Plug 'tpope/vim-fugitive'
 
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
