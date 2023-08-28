@@ -33,6 +33,7 @@ call plug#begin()
     Plug 'xolox/vim-misc'
     Plug 'xolox/vim-session'
     Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-commentary'
 
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
