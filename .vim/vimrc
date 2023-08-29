@@ -49,6 +49,7 @@ call plug#begin()
     Plug 'tpope/vim-unimpaired'
 
     Plug 'davidhalter/jedi-vim'
+    Plug 'jeetsukumaran/vim-pythonsense'
 
     "Plug 'easymotion/vim-easymotion'
     Plug 'folke/which-key.nvim'
