@@ -40,6 +40,7 @@ call plug#begin()
     nnoremap <silent> <C-p> :Files<CR>
     nnoremap <silent> <Leader>p :Rg<CR>
     nnoremap <silent> <Leader>b :Buffers<CR>
+    nnoremap <silent> <Leader>g :Commits<CR>
 
     " use ripgrep for :grep
     set grepprg=rg\ --vimgrep\ --smart-case\ --follow
