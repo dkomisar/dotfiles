@@ -3,6 +3,10 @@
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
+"custom pairs
+nnoremap <silent> [t :tabprev<CR>
+nnoremap <silent> ]t :tabnext<CR>
+
 "setup vim-plug
 "https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
