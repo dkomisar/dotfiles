@@ -17,6 +17,9 @@ endif
 
 "plugin
 call plug#begin()
+  Plug 'tpope/vim-commentary'
+  Plug 'jeetsukumaran/vim-pythonsense'
+
   if exists('g:vscode')
     " VSCode extension
     "Plug 'asvetliakov/vim-easymotion', { 'as': 'vsc-easymotion' }
@@ -31,7 +34,6 @@ call plug#begin()
     Plug 'xolox/vim-misc'
     Plug 'xolox/vim-session'
     Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-commentary'
 
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
@@ -48,7 +50,6 @@ call plug#begin()
     Plug 'tpope/vim-unimpaired'
 
     Plug 'davidhalter/jedi-vim'
-    Plug 'jeetsukumaran/vim-pythonsense'
 
     "Plug 'easymotion/vim-easymotion'
     Plug 'folke/which-key.nvim'
@@ -58,7 +59,7 @@ call plug#end()
 
 "tabs
 set tabstop=2
-set shiftwidth=2
+set shiftwidth=0
 set softtabstop=2
 set expandtab
 
