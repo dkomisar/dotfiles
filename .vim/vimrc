@@ -33,6 +33,7 @@ call plug#begin()
     Plug 'junegunn/vim-peekaboo'
     Plug 'xolox/vim-misc'
     Plug 'xolox/vim-session'
+    let g:session_autosave = 'no'
     Plug 'tpope/vim-fugitive'
 
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
