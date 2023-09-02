@@ -1,7 +1,7 @@
 "leader must be set before keymaps
 
 nnoremap <SPACE> <Nop>
-let mapleader = " "
+let mapleader = "\<space>"
 
 "custom pairs
 nnoremap <silent> [t :tabprev<CR>
