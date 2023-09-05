@@ -3,6 +3,10 @@ nnoremap <silent> <Leader>t :tabnew<CR>
 "custom pairs
 nnoremap <silent> [t :tabprev<CR>
 nnoremap <silent> ]t :tabnext<CR>
+nnoremap <silent> ]w :ALENext<CR>
+nnoremap <silent> ]W :ALELast<CR>
+nnoremap <silent> [w :ALEPrevious<CR>
+nnoremap <silent> [W :ALEFirst<CR>
 
 "fzf
 nnoremap <silent> <Leader>f :Files<CR>

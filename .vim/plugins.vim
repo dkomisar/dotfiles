@@ -51,6 +51,9 @@ else
 
   " Plug 'tpope/vim-projectionist.git'
 
+  " linting
+  Plug 'w0rp/ale'
+
   " python
   " <leader>g=goto, <leader>d=definition, <leader>s=stub
   " <leader>r=rename
