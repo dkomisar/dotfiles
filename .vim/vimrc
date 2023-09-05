@@ -43,6 +43,9 @@ call plug#begin()
     nnoremap <silent> <Leader>b :Buffers<CR>
     nnoremap <silent> <Leader>c :Commits<CR>
     nnoremap <silent> <Leader>j :Jumps<CR>
+    nnoremap <silent> <Leader>m :Marks<CR>
+    nnoremap <silent> <Leader>/ :History/<CR>
+    nnoremap <silent> <Leader>: :History:<CR>
 
     " use ripgrep for :grep
     set grepprg=rg\ --vimgrep\ --smart-case\ --follow
