@@ -59,6 +59,9 @@ else
   " Plug 'vim-syntastic/syntastic'
   " Plug 'neomake/neomake'
 
+  " testing
+  Plug 'vim-test/vim-test'
+
   " python
   " <leader>g=goto, <leader>d=definition, <leader>s=stub
   " <leader>r=rename
@@ -86,4 +89,7 @@ let g:session_autosave = 'no'
 
 " vim-airline tabline which only comes on when no tabs are open
 let g:airline#extensions#tabline#enabled = 1
+
+" vim-test setting to display test errors in quickfix
+let test#strategy = "dispatch"
 
