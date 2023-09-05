@@ -10,7 +10,7 @@ Plug 'jeetsukumaran/vim-pythonsense'
 " navigation with [ and ]
 Plug 'tpope/vim-unimpaired'
 
-"Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 
 " manipulate quotes, tags, brackets, etc
 " <action>s<to><from> where action: y=add, d=delete, c=change
@@ -30,8 +30,9 @@ else
   Plug 'scrooloose/nerdtree'
 
   " run async builds
+  Plug 'tpope/vim-dispatch'
   if has('nvim')
-    Plug 'tpope/vim-dispatch'
+    Plug 'radenling/vim-dispatch-neovim'
   endif
 
   " sessions
@@ -48,6 +49,8 @@ else
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
 
+  " Plug 'tpope/vim-projectionist.git'
+
   " python
   " <leader>g=goto, <leader>d=definition, <leader>s=stub
   " <leader>r=rename
@@ -58,9 +61,9 @@ else
   Plug 'junegunn/vim-peekaboo'
 
   " show popup for potential key commands
-  "Plug 'easymotion/vim-easymotion'
+  " Plug 'easymotion/vim-easymotion'
   Plug 'folke/which-key.nvim'
-  "Plug 'liuchengxu/vim-which-key' "original
+  " Plug 'liuchengxu/vim-which-key' "original
   
   " terminal
   if has('nvim')
@@ -72,4 +75,7 @@ call plug#end()
 
 " turn off vim-session nagging
 let g:session_autosave = 'no'
+
+" vim-airline tabline which only comes on when no tabs are open
+let g:airline#extensions#tabline#enabled = 1
 

@@ -1,3 +1,5 @@
+nnoremap <silent> <Leader>t :tabnew<CR>
+
 "custom pairs
 nnoremap <silent> [t :tabprev<CR>
 nnoremap <silent> ]t :tabnext<CR>
