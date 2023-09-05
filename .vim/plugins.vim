@@ -35,9 +35,9 @@ else
   endif
 
   " sessions
-  Plug 'xolox/vim-misc'
-  Plug 'xolox/vim-session'
-  " Plug 'tpope/vim-obsession'
+  " Plug 'xolox/vim-misc'
+  " Plug 'xolox/vim-session'
+  Plug 'tpope/vim-obsession'
 
   " git
   " :Git=status, :Git difftool, :Gdiffsplit
