@@ -61,6 +61,7 @@ else
 
   " testing
   Plug 'vim-test/vim-test'
+  Plug 'tartansandal/vim-compiler-pytest'
 
   " python
   " <leader>g=goto, <leader>d=definition, <leader>s=stub

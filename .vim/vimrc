@@ -14,6 +14,7 @@ endif
 runtime! ftplugin/man.vim
 
 source ~/.vim/plugins.vim
+source ~/.vim/python.vim
 source ~/.vim/defaults.vim
 source ~/.vim/keymaps.vim
 
