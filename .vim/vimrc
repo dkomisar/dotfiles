@@ -38,8 +38,8 @@ call plug#begin()
 
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    nnoremap <silent> <C-p> :Files<CR>
-    nnoremap <silent> <Leader>p :Rg<CR>
+    nnoremap <silent> <Leader>f :Files<CR>
+    nnoremap <silent> <Leader>r :Rg<CR>
     nnoremap <silent> <Leader>b :Buffers<CR>
     nnoremap <silent> <Leader>c :Commits<CR>
 
