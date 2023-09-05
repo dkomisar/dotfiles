@@ -26,3 +26,7 @@ set ignorecase smartcase
 "not needed after vim 8
 set nocompatible
 filetype plugin indent on
+
+" use ripgrep for :grep
+set grepprg=rg\ --vimgrep\ --smart-case\ --follow
+

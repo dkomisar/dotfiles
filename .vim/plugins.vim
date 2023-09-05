@@ -20,17 +20,6 @@ call plug#begin()
 
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    nnoremap <silent> <Leader>f :Files<CR>
-    nnoremap <silent> <Leader>r :Rg<CR>
-    nnoremap <silent> <Leader>b :Buffers<CR>
-    nnoremap <silent> <Leader>c :Commits<CR>
-    nnoremap <silent> <Leader>j :Jumps<CR>
-    nnoremap <silent> <Leader>m :Marks<CR>
-    nnoremap <silent> <Leader>/ :History/<CR>
-    nnoremap <silent> <Leader>: :History:<CR>
-
-    " use ripgrep for :grep
-    set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 
     "Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'
