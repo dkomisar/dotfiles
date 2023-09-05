@@ -37,8 +37,11 @@ else
   " sessions
   Plug 'xolox/vim-misc'
   Plug 'xolox/vim-session'
+  " Plug 'tpope/vim-obsession'
 
   " git
+  " :Git=status, :Git difftool, :Gdiffsplit
+  " :Gread, :Gwrite, :Gedit, :Ggrep
   Plug 'tpope/vim-fugitive'
 
   " search
@@ -46,6 +49,9 @@ else
   Plug 'junegunn/fzf.vim'
 
   " python
+  " <leader>g=goto, <leader>d=definition, <leader>s=stub
+  " <leader>r=rename
+  " <leader>n=show usages, K=show docs
   Plug 'davidhalter/jedi-vim'
 
   " show register popup when " typed for register put
