@@ -46,13 +46,18 @@ else
   Plug 'tpope/vim-fugitive'
 
   " search
+  " :Grepper, :GrepperGrep, :GrepperGit, :GrepperRg
+  Plug 'mhinz/vim-grepper'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
 
   " Plug 'tpope/vim-projectionist.git'
 
   " linting
+  " :ALEInfo
   Plug 'w0rp/ale'
+  " Plug 'vim-syntastic/syntastic'
+  " Plug 'neomake/neomake'
 
   " python
   " <leader>g=goto, <leader>d=definition, <leader>s=stub
