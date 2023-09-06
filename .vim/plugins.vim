@@ -68,6 +68,7 @@ else
   " <leader>r=rename
   " <leader>n=show usages, K=show docs
   Plug 'davidhalter/jedi-vim'
+  Plug 'alfredodeza/pytest.vim'
 
   " show register popup when " typed for register put
   Plug 'junegunn/vim-peekaboo'
