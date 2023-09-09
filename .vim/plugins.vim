@@ -1,3 +1,8 @@
+" enable :Man man page viewer
+runtime! ftplugin/man.vim
+" jump between tags with %
+runtime! macros/matchit.vim
+
 call plug#begin()
 
 Plug 'tpope/vim-commentary'

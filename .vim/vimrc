@@ -10,9 +10,6 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-" enable :Man man page viewer
-runtime! ftplugin/man.vim
-
 source ~/.vim/plugins.vim
 source ~/.vim/python.vim
 source ~/.vim/defaults.vim
