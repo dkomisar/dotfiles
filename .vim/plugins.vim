@@ -72,6 +72,7 @@ else
   " <leader>n=show usages, K=show docs
   Plug 'davidhalter/jedi-vim'
   Plug 'alfredodeza/pytest.vim'
+  Plug 'tmhedberg/SimpylFold'
 
   " show register popup when " typed for register put
   Plug 'junegunn/vim-peekaboo'
@@ -88,6 +89,12 @@ else
 endif
 
 call plug#end()
+
+" unfold python on load
+augroup python_unfold
+  autocmd!
+  autocmd FileType python normal zR
+augroup END
 
 " turn off vim-session nagging
 let g:session_autosave = 'no'
