@@ -10,6 +10,9 @@ Plug 'jeetsukumaran/vim-pythonsense'
 " navigation with [ and ]
 Plug 'tpope/vim-unimpaired'
 
+" expand text objects with +
+Plug 'terryma/vim-expand-region'
+
 " Plug 'jiangmiao/auto-pairs'
 
 " manipulate quotes, tags, brackets, etc
