@@ -2,6 +2,7 @@ nnoremap <silent> <Leader>t :tabnew<CR>
 
 " window switching
 if has('nvim')
+  nnoremap <silent> <c-`> :split +terminal<CR>
   tnoremap <c-\><c-\> <c-\><c-n>
   tnoremap <c-w><c-h> <c-\><c-n><c-w>h
   tnoremap <c-w><c-j> <c-\><c-n><c-w>j
