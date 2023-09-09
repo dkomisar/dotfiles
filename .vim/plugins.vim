@@ -59,6 +59,9 @@ else
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
 
+  " .env support with :Dotenv
+  Plug 'tpope/vim-dotenv'
+
   " Plug 'tpope/vim-projectionist.git'
 
   " linting
