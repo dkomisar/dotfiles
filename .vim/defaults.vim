@@ -30,3 +30,6 @@ filetype plugin indent on
 " use ripgrep for :grep
 set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 
+" slow down mouse scrolling
+set mousescroll=ver:1,hor:6
+
