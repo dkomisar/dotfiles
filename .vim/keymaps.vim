@@ -1,15 +1,14 @@
 nnoremap <silent> <Leader>t :tabnew<CR>
 
 " window switching
-nnoremap <c-v><c-h> <c-w>h
-nnoremap <c-v><c-j> <c-w>j
-nnoremap <c-v><c-l> <c-w>l
-nnoremap <c-v><c-k> <c-w>k
 if has('nvim')
-  tnoremap <c-v><c-h> <c-\><c-n><c-w>h
-  tnoremap <c-v><c-j> <c-\><c-n><c-w>j
-  tnoremap <c-v><c-l> <c-\><c-n><c-w>l
-  tnoremap <c-v><c-k> <c-\><c-n><c-w>k
+  tnoremap <c-w><c-h> <c-\><c-n><c-w>h
+  tnoremap <c-w><c-j> <c-\><c-n><c-w>j
+  tnoremap <c-w><c-l> <c-\><c-n><c-w>l
+  tnoremap <c-w><c-k> <c-\><c-n><c-w>k
+  tnoremap <c-w><c-w> <c-\><c-n><c-w>w
+  " automatically enter insert mode in terminal
+  autocmd BufWinEnter,WinEnter term://* startinsert
 endif
 
 " custom pairs
