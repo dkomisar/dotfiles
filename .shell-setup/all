@@ -19,6 +19,15 @@ else
   export EDITOR=vim
 fi
 
+# neovim-remote setup
+if [[ -n "$NVIM" ]] || [[ -n "$NVIM_LISTEN_ADDERESS" ]]; then
+  if [[ -x "$(command -v nvr)" ]]; then
+    alias nvim=nvr
+  else
+    alias nvim='echo "No nested nvim instances"'
+  fi
+fi
+
 # Misc settings
 export FZF_DEFAULT_COMMAND="rg --files"
 export FZF_DEFAULT_OPTS="-m"
