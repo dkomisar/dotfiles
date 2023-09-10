@@ -98,18 +98,3 @@ endif
 
 call plug#end()
 
-" unfold python on load
-augroup python_unfold
-  autocmd!
-  autocmd FileType python normal zR
-augroup END
-
-" turn off vim-session nagging
-let g:session_autosave = 'no'
-
-" vim-airline tabline which only comes on when no tabs are open
-let g:airline#extensions#tabline#enabled = 1
-
-" vim-test setting to display test errors in quickfix
-let test#strategy = "dispatch"
-
