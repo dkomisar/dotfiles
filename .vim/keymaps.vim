@@ -4,7 +4,7 @@ nnoremap <silent> <Leader>t :tabnew<CR>
 if has('nvim')
   nnoremap <silent> <c-`> :split +terminal<CR>
   " leave terminal insert mode
-  tnoremap <c-\><c-\> <c-\><c-n>
+  tnoremap <c-space> <c-\><c-n>
   " create new split
   tnoremap <c-w><c-s> <c-\><c-n><c-w>s
   tnoremap <c-w><c-v> <c-\><c-n><c-w>v
