@@ -42,3 +42,7 @@ let g:airline#extensions#tabline#enabled = 1
 " vim-test setting to display test errors in quickfix
 let test#strategy = "dispatch"
 
+" setup neovim-remote to be used for VISUAL
+if has("nvim") && executable("nvr")
+  let $VISUAL="nvr -cc split --remote-wait +'set bufhidden=wipe'"
+endif
