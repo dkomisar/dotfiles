@@ -28,6 +28,12 @@ if has('nvim')
   augroup END
 endif
 
+" window resizing
+noremap <c-+> <c-w>+
+noremap <c-_> <c-w>-
+noremap <c-<> <c-w><
+noremap <c->> <c-w>>
+
 " custom pairs
 nnoremap <silent> [t :tabprev<CR>
 nnoremap <silent> ]t :tabnext<CR>
