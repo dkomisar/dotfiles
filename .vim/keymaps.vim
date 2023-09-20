@@ -35,8 +35,8 @@ noremap <c-<> <c-w><
 noremap <c->> <c-w>>
 
 " misc
-nnoremap <silent> <space><space> :helpclose<CR>
-nnoremap <silent> <c-space> :only<CR>
+nnoremap <silent> <space><space> :only<CR>
+nnoremap <silent> <c-space> :helpclose<CR>
 
 " custom pairs
 nnoremap <silent> [t :tabprev<CR>
