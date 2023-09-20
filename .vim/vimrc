@@ -1,6 +1,7 @@
 "leader must be set before keymaps
 nnoremap <SPACE> <Nop>
 let mapleader = "\<space>"
+let maplocalleader = "\\"
 
 "setup vim-plug
 "https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
