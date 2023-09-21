@@ -10,6 +10,7 @@ set hidden
 "line numbers
 set number
 set relativenumber
+autocmd BufEnter,TermOpen term://* setlocal nonumber | setlocal norelativenumber
 
 "highlight search
 set hlsearch
