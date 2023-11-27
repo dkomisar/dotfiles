@@ -49,7 +49,7 @@ else
   Plug 'tpope/vim-obsession'
 
   " git
-  " :Git=status, :Git difftool, :Gdiffsplit
+  " :Git status, :Git difftool, :Gdiffsplit
   " :Gread, :Gwrite, :Gedit, :Ggrep
   Plug 'tpope/vim-fugitive'
 
