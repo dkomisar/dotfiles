@@ -24,6 +24,9 @@ Plug 'terryma/vim-expand-region'
 " <action>s<to><from> where action: y=add, d=delete, c=change
 Plug 'tpope/vim-surround'
 
+" Pretty print vim variables
+Plug 'thinca/vim-prettyprint'
+
 if exists('g:vscode')
   " Plug 'asvetliakov/vim-easymotion', { 'as': 'vsc-easymotion' }
 else
