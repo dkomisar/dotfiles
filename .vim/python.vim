@@ -10,7 +10,7 @@ let g:dispatch_compilers['poetry run pytest']='pytest'
 if exists("g:loaded_SimpylFold")
   augroup python_unfold
     autocmd!
-    autocmd FileType python normal zR
+    "autocmd FileType python normal zR
   augroup END
 endif
 
