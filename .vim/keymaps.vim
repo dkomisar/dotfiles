@@ -1,5 +1,3 @@
-nnoremap <silent> <Leader>t :tabnew<CR>
-
 " window switching
 if has('nvim')
   nnoremap <silent> <c-`> :split +terminal<CR>
