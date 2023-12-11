@@ -88,6 +88,11 @@ else
   " show register popup when " typed for register put
   Plug 'junegunn/vim-peekaboo'
 
+  " navigation shortcuts
+  if has('nvim')
+    Plug 'ggandor/lightspeed.nvim'
+  endif
+
   " show popup for potential key commands
   " Plug 'easymotion/vim-easymotion'
   Plug 'folke/which-key.nvim'
