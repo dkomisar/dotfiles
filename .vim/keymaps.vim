@@ -46,6 +46,12 @@ nnoremap <silent> ]W :ALELast<CR>
 nnoremap <silent> [w :ALEPrevious<CR>
 nnoremap <silent> [W :ALEFirst<CR>
 
+" search for word under cursor
+nnoremap <Leader>* :Grepper -cword -noprompt<CR>
+" search for current selection
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
+
 " fzf
 nnoremap <silent> <Leader>f :Files<CR>
 nnoremap <silent> <Leader>r :Rg<CR>
