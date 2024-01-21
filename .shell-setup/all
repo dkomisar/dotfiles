@@ -30,7 +30,8 @@ if [[ -n "$NVIM" ]] || [[ -n "$NVIM_LISTEN_ADDERESS" ]]; then
   fi
 fi
 
-# Misc settings
+# use ripgrep for fzf search
 export FZF_DEFAULT_COMMAND="rg --files"
-export FZF_DEFAULT_OPTS="-m"
+# enable multi-select with tab/shift-tab
+export FZF_DEFAULT_OPTS="--multi"
 
