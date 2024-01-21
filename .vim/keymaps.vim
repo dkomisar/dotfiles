@@ -28,7 +28,7 @@ if has('nvim')
   " automatically enter insert mode in terminal
   augroup terminal_autocommands
     autocmd!
-    autocmd TermOpen,BufEnter term://* startinsert
+    autocmd TermOpen,TermEnter,BufWinEnter,BufEnter,WinEnter,TabEnter term://* startinsert
   augroup END
 endif
 
