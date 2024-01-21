@@ -1,19 +1,24 @@
 " window switching
 if has('nvim')
-  nnoremap <silent> <c-`> :split +terminal<CR>
+  " nnoremap <silent> <c-`> :split +terminal<CR>
   " leave terminal insert mode
-  tnoremap <esc> <c-\><c-n>
-  tnoremap <c-v><esc> <esc>
+  tnoremap <c-v><esc> <c-\><c-n>
   " create new split
   tnoremap <c-w><c-s> <c-\><c-n><c-w>s
+  tnoremap <c-w>s     <c-\><c-n><c-w>s
   tnoremap <c-w><c-v> <c-\><c-n><c-w>v
+  tnoremap <c-w>v     <c-\><c-n><c-w>v
   " switch to different window
-  tnoremap <c-w>w <c-\><c-n><c-w>w
   tnoremap <c-w><c-w> <c-\><c-n><c-w>w
+  tnoremap <c-w>w     <c-\><c-n><c-w>w
   tnoremap <c-w><c-h> <c-\><c-n><c-w>h
+  tnoremap <c-w>h     <c-\><c-n><c-w>h
   tnoremap <c-w><c-j> <c-\><c-n><c-w>j
+  tnoremap <c-w>j     <c-\><c-n><c-w>j
   tnoremap <c-w><c-l> <c-\><c-n><c-w>l
+  tnoremap <c-w>l     <c-\><c-n><c-w>l
   tnoremap <c-w><c-k> <c-\><c-n><c-w>k
+  tnoremap <c-w>k     <c-\><c-n><c-w>k
   " move window
   tnoremap <c-w>H <c-\><c-n><c-w>H
   tnoremap <c-w>J <c-\><c-n><c-w>J
