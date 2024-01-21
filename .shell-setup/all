@@ -1,6 +1,6 @@
 # aliases for accessing dotfiles repo
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dotfiles-add-all='dotfiles add -a'
+alias dotfiles-add-all='dotfiles add -u'
 alias dotfiles-commit-all='dotfiles commit -a'
 alias dotfiles-gui='GIT_DIR=$HOME/.dotfiles GIT_WORK_TREE=$HOME /usr/bin/gitk'
 
