@@ -69,7 +69,7 @@ else
 
   " linting
   " :ALEInfo
-  Plug 'w0rp/ale'
+  Plug 'dense-analysis/ale'
   " Plug 'vim-syntastic/syntastic'
   " Plug 'neomake/neomake'
 

@@ -47,3 +47,7 @@ let test#strategy = "dispatch"
 if has("nvim") && executable("nvr")
   let $VISUAL="nvr -cc split --remote-wait +'set bufhidden=wipe'"
 endif
+
+" turn on ALE completion
+let g:ale_completion_enabled = 1
+
