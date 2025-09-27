@@ -1,0 +1,11 @@
+# XONSH WEBCONFIG START
+$XONSH_COLOR_STYLE = 'solarized-dark'
+# XONSH WEBCONFIG END
+
+$VI_MODE = True
+
+# blue not readable
+$LSCOLORS = "ExfxcxdxbxEgedabagacad"
+
+$PATH.append("/opt/homebrew/bin")
+
