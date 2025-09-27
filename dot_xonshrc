@@ -5,7 +5,8 @@ $XONSH_COLOR_STYLE = 'solarized-dark'
 $VI_MODE = True
 
 # blue not readable
+# was $LSCOLORS = "exfxcxdxbxkgedabagacad"
 $LSCOLORS = "ExfxcxdxbxEgedabagacad"
 
+$PATH.insert(0, $HOME + "/.local/bin")
 $PATH.append("/opt/homebrew/bin")
-
