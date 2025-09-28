@@ -1,10 +1,10 @@
 if $(uname) == 'Darwin':
-  aliases['code'] = 'open -b com.microsoft.VSCode @($args)'
-  aliases['chrome'] = 'open -a "Google Chrome" @($args)'
+    aliases['code'] = 'open -b com.microsoft.VSCode @($args)'
+    aliases['chrome'] = 'open -a "Google Chrome" @($args)'
 
 $PATH.add($HOME + '/.local/bin', front=True)
 if $(uname) == 'Darwin':
-  $PATH.add('/opt/homebrew/bin')
+    $PATH.add('/opt/homebrew/bin')
 
 # XONSH WEBCONFIG START
 $XONSH_COLOR_STYLE = 'solarized-dark'
@@ -16,3 +16,7 @@ $LSCOLORS = "ExfxcxdxbxEgedabagacad"
 
 $VI_MODE = True
 $EDITOR = "vi"
+
+if $(uname) == 'Darwin':
+    $SSH_ASKPASS='/opt/homebrew/bin/ssh-askpass'
+    $SSH_ASKPASS_REQUIRE='prefer'
