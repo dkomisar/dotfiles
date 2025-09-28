@@ -1,12 +1,18 @@
+if $(uname) == 'Darwin':
+  aliases['code'] = 'open -b com.microsoft.VSCode @($args)'
+  aliases['chrome'] = 'open -a "Google Chrome" @($args)'
+
+$PATH.add($HOME + '/.local/bin', front=True)
+if $(uname) == 'Darwin':
+  $PATH.add('/opt/homebrew/bin')
+
 # XONSH WEBCONFIG START
 $XONSH_COLOR_STYLE = 'solarized-dark'
 # XONSH WEBCONFIG END
-
-$VI_MODE = True
 
 # blue not readable
 # was $LSCOLORS = "exfxcxdxbxkgedabagacad"
 $LSCOLORS = "ExfxcxdxbxEgedabagacad"
 
-$PATH.insert(0, $HOME + "/.local/bin")
-$PATH.append("/opt/homebrew/bin")
+$VI_MODE = True
+$EDITOR = "vi"
