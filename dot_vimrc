@@ -24,3 +24,8 @@ set hlsearch
 set incsearch
 "ignore case for all lowercase search
 set ignorecase smartcase
+
+"tab completion
+set wildmenu
+set wildmode=full
+
