@@ -1,3 +1,7 @@
+# prompt
+PS1="\n\[\e[1;36m\]┌──❨ \[\e[1;32m\]\u\[\e[1;34m\]@\h \[\e[1;35m\]\w \[\e[1;36m\]❩\n└───► \[\e[0m\]"
+PS2="\[\e[1;36m\]├───► \[\e[0m\]"
+
 # PATH setup
 if [[ `uname` == Darwin ]]; then
   PATH="/opt/homebrew/bin:$PATH"
@@ -16,6 +20,8 @@ set -o vi
 # aliases
 alias ls="ls --color"
 alias ll="ls -l"
+alias la="ls -a"
+alias lal="ls -al"
 if [[ `uname` == Darwin ]]; then
   alias chrome='open -a "Google Chrome" --args'
 fi
