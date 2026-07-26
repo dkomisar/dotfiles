@@ -9,7 +9,7 @@ silent! if plug#begin()
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-unimpaired'
-  "Plug '~/.vim/xonsh'
+  Plug '~/.vim/xonsh'
   call plug#end()
 endif
 
