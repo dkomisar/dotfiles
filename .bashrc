@@ -8,9 +8,12 @@ if [[ `uname` == Darwin ]]; then
 fi
 PATH="$HOME/.local/bin:$PATH"
 
-# use secretive ssh-agent
 if [[ -d ~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent ]]; then
+  # secretive ssh agent
   export SSH_AUTH_SOCK=~/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
+elif [[ -e ~/.bitwarden-ssh-agent.sock ]]; then
+  # bitwarden ssh agent
+  export SSH_AUTH_SOCK=~/.bitwarden-ssh-agent.sock
 fi
 
 # vi
